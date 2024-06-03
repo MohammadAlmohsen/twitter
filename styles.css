@@ -47,7 +47,7 @@ header{
     font-size: 3rem;
     margin-right: 15px;
 }
-.nav-links a:hover, .main-account a:hover{
+.nav-links a:hover, .main-account a:hover, .follow-profile:hover{
     background-color: rgb(47, 51, 54);
     border-radius: 9999px;
 }
@@ -360,5 +360,51 @@ main{
     font-weight: 600;
     background-color: white;
     color: black;
+    font-size: 1.5rem;
 
+}
+.follow .show-more{
+    padding:10px 15px;
+}
+.follow-cont{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 1260px){
+    header{
+        width: 10%;
+        padding: 10px 0;
+    }
+    main{
+        margin-left: 10%;
+    }
+    header span{
+        display: none;
+    }
+    header .tweet-button{
+        width:55px;
+        border-radius: 50%;
+        font-size: 1.4rem;
+
+    }
+    header .main-account{
+        display: flex;
+        justify-content: center;
+
+    }
+    header .main-account i{
+        display: none;
+    }
+    header .account-details{
+        display: none;
+    }
+    .nav-links{
+        align-items: center;
+    }
+    .nav-links a i{
+        margin-right: 0;
+    }
+    .nav-links a, .main-account a{
+        padding: 10px 10px;
+    }
 }
